@@ -1,0 +1,77 @@
+body {
+    background-color: #F5EDE0;
+}
+
+nav {
+    flex: auto;
+    background-color: #FFE5BF;
+    border-radius: 12px;
+}
+
+main {
+    display: flex;
+    gap: 10px;
+}
+
+#content {
+    flex: 3;
+}
+
+aside {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.footer {
+    padding-bottom: 1.5rem;
+    text-align: center;
+    background-color: #FFE5BF;
+    font-size: .85rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--row {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card,.dish,.culture {
+    background: #fff;
+    border: 1px solid rgba(184, 134, 43, .3);
+    padding: 1.6rem;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card:hover,.dish:hover,.culture:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(43, 27, 18, .08);
+}
+
+.card h3,.dish h3,.culture h3 {
+    font-size: 1.15rem;
+    margin-bottom: .5rem;
+}
+
+.card p,.dish p,.culture p {
+    font-size: .92rem;
+    color: var(--charcoal);
+}
+
+.culture {
+    text-align: center;
+}
+
+.culture__icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 1rem;
+}
