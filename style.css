@@ -40,38 +40,23 @@ aside {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.grid--row {
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.card,.dish,.culture {
+.card {
     background: #fff;
     border: 1px solid rgba(184, 134, 43, .3);
     padding: 1.6rem;
     transition: transform .2s ease, box-shadow .2s ease;
 }
 
-.card:hover,.dish:hover,.culture:hover {
+.card:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 24px rgba(43, 27, 18, .08);
 }
 
-.card h3,.dish h3,.culture h3 {
+.card h3 {
     font-size: 1.15rem;
     margin-bottom: .5rem;
 }
-
-.card p,.dish p,.culture p {
+.card p {
     font-size: .92rem;
     color: var(--charcoal);
-}
-
-.culture {
-    text-align: center;
-}
-
-.culture__icon {
-    width: 48px;
-    height: 48px;
-    margin: 0 auto 1rem;
 }
